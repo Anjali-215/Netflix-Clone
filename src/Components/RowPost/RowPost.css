@@ -1,0 +1,84 @@
+.row{
+    margin-left: 20px;
+    color: white;
+    overflow-x: auto;
+    margin-top: 20px; /* Space between rows */
+    overflow-x: auto; /* Enables horizontal scrolling */
+    max-width: 100vw; /* Adjust this value as needed */
+     
+    
+
+}
+.posters {
+    display: flex;
+    padding: 10px;
+    overflow-x: scroll; /* Use auto instead of scroll */
+    overflow-y: hidden;
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+}
+
+.posters::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari */
+}
+
+
+.poster{
+    max-height: 250px;
+    margin-right: 8px;
+    width: 300px;
+    height: 250px;
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+.smallPoster{
+    max-height: 150px;
+    margin-right: 8px;
+    
+    
+}
+
+
+.smallPoster:hover{
+  transform: scale(1.1);
+}
+
+.poster:hover {
+    transform: scale(1.1);
+  transition: transform 0.3s; /* Smooth scaling effect */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow effect on hover */
+  
+}
+
+
+  
+  .posters {
+    display: flex;
+    gap: 10px; /* Adds spacing between images */
+  }
+  
+
+  
+  .poster:hover {
+    transform: scale(1.1);
+  }
+::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar */
+  }
+  
+  .rowTitle {
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .rowPosters {
+    display: flex;
+    gap: 10px; /* Adds spacing between images */
+  }
+
+
+
